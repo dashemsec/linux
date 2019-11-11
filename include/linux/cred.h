@@ -145,6 +145,7 @@ struct cred {
 #endif
 #ifdef CONFIG_SECURITY
 	void		*security;	/* subjective LSM security */
+	uint16_t	caauth_flag;	/* CA AUTH flag */
 #endif
 	struct user_struct *user;	/* real user ID subscription */
 	struct user_namespace *user_ns; /* user_ns the caps and keyrings are relative to. */
